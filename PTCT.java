@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Week10 {
+public class PTCT {
     private static final Pattern PACKAGE_PATTERN = Pattern.compile(
             "^package\\s+(.*);$",
             Pattern.MULTILINE
@@ -23,7 +23,7 @@ public class Week10 {
     );
 
     private static final Pattern STATIC_METHOD_PATTERN = Pattern.compile(
-            "^(?<!\\s{0,20}/\\*\\n)" // Negative lookbehind
+            "^(?<!\\s{0,20}/\\*\\n)"
             + "(?:\\s{2})+(?:(?:public|private|protected)\\s+)*"
             + "static\\s+(?:final\\s+)?[\\w<>,.?\\[\\]\\s]+\\s+(\\w+)"
             + "\\s*\\(([\\w<>,.?\\[\\]\\s]*)\\)\\s*\\{",
